@@ -1,0 +1,464 @@
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
+.dicas-tech-blog {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #35483b;
+  line-height: 1.75;
+  box-sizing: border-box;
+}
+
+.dicas-tech-card {
+  background: #fbfffc;
+  border: 1px solid #cfe6d5;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(76, 125, 88, 0.08);
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
+
+.dicas-tech-blog h1 {
+  margin: 0 0 22px;
+  padding-bottom: 15px;
+  color: #4f8060;
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  border-bottom: 2px solid #d9eadc;
+}
+
+/* =========================================================
+   TÍTULOS DAS SEÇÕES
+   ========================================================= */
+
+.dicas-tech-blog h2 {
+  margin: 32px 0 16px;
+  padding: 10px 14px;
+  color: #4f8060;
+  background: #eef8f0;
+  border-left: 5px solid #76a982;
+  border-radius: 8px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.dicas-tech-blog h3 {
+  margin: 25px 0 10px;
+  color: #568364;
+  font-size: 20px;
+}
+
+/* =========================================================
+   TEXTOS
+   ========================================================= */
+
+.dicas-tech-blog p {
+  margin: 0 0 15px;
+}
+
+.dicas-tech-blog strong {
+  color: #477254;
+}
+
+.dicas-tech-blog ul {
+  margin: 10px 0 20px;
+  padding-left: 25px;
+}
+
+.dicas-tech-blog li {
+  margin-bottom: 12px;
+}
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.tech-intro {
+  padding: 20px;
+  margin: 20px 0;
+  background: #f2faf4;
+  border: 1px solid #d5ead9;
+  border-radius: 12px;
+}
+
+/* =========================================================
+   IMAGEM PRINCIPAL
+   ========================================================= */
+
+.tech-imagem {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.tech-imagem a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+}
+
+.tech-imagem img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(76, 125, 88, 0.12);
+}
+
+.tech-imagem p {
+  margin: 10px 0 0;
+  color: #66816d;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CAIXAS DE DESTAQUE
+   ========================================================= */
+
+.tech-destaque {
+  margin: 25px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f9f2, #e5f3e8);
+  border: 1px solid #cce3d1;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(76, 125, 88, 0.06);
+}
+
+.tech-destaque strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #4f8060;
+  font-size: 19px;
+}
+
+.tech-destaque p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   CAIXA DE INFORMAÇÕES
+   ========================================================= */
+
+.tech-info {
+  margin: 20px 0;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid #d6e8d9;
+  border-radius: 12px;
+}
+
+.tech-info p {
+  margin: 7px 0;
+}
+
+/* =========================================================
+   SEÇÃO DE TIPOS DE IA
+   ========================================================= */
+
+.tech-tipos {
+  padding: 5px 0;
+}
+
+.tech-tipo-card {
+  margin: 18px 0;
+  padding: 18px 20px;
+  background: #f7fcf8;
+  border: 1px solid #d8e9dc;
+  border-left: 4px solid #91bd9a;
+  border-radius: 10px;
+}
+
+.tech-tipo-card h3 {
+  margin-top: 0;
+}
+
+/* =========================================================
+   LISTA DE APLICAÇÕES
+   ========================================================= */
+
+.tech-lista {
+  margin: 20px 0;
+  padding: 20px 25px;
+  background: #f3faf4;
+  border: 1px solid #d4e8d8;
+  border-radius: 12px;
+}
+
+.tech-lista li::marker {
+  color: #6d9b78;
+}
+
+/* =========================================================
+   IMPACTO E FUTURO
+   ========================================================= */
+
+.tech-impacto {
+  padding: 20px;
+  background: #f3faf4;
+  border: 1px solid #d4e8d8;
+  border-radius: 12px;
+}
+
+.tech-impacto p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   SEÇÃO DO QUIZ (PASSO A PASSO)
+   ========================================================= */
+
+.tech-quiz-box {
+  margin: 35px 0;
+  padding: 25px;
+  background: #f4fbf6;
+  border: 1px solid #d0e7d5;
+  border-radius: 16px;
+}
+
+.tech-quiz-progresso {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4f8060;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-quiz-pergunta {
+  display: none;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e1efe4;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tech-quiz-pergunta.ativa {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tech-quiz-pergunta h4 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #3b664a;
+}
+
+.tech-quiz-opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-opcao {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  background: #f9fdfa;
+  border: 1px solid #d5ead9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.tech-opcao:hover {
+  background: #eef8f0;
+  border-color: #9ac4a3;
+}
+
+.tech-opcao input {
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #4f8060;
+}
+
+.tech-opcao.correta {
+  background: #dff2e3 !important;
+  border-color: #4f8060 !important;
+  color: #1e5330;
+  font-weight: bold;
+}
+
+.tech-opcao.incorreta {
+  background: #fde8e8 !important;
+  border-color: #df6969 !important;
+  color: #8c2727;
+}
+
+.tech-feedback-msg {
+  display: none;
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tech-feedback-msg.acerto {
+  display: block;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.tech-feedback-msg.erro {
+  display: block;
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.tech-quiz-acoes {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.tech-quiz-btn {
+  padding: 10px 22px;
+  background: #4f8060;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.tech-quiz-btn:hover {
+  background: #3e684d;
+}
+
+.tech-btn-proxima {
+  display: none;
+  background: #35483b;
+}
+
+.tech-btn-proxima:hover {
+  background: #233127;
+}
+
+.tech-resultado-final {
+  display: none;
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  background: #eaf6ed;
+  color: #234c2f;
+  border: 1px solid #bce1c5;
+}
+
+.tech-resultado-final button {
+  margin-top: 15px;
+}
+
+/* =========================================================
+   CONCLUSÃO
+   ========================================================= */
+
+.tech-conclusao {
+  margin-top: 35px;
+  padding: 25px;
+  background: linear-gradient(135deg, #eef8f0, #e4f3e7);
+  border: 1px solid #cfe4d3;
+  border-radius: 15px;
+}
+
+.tech-conclusao h2 {
+  margin-top: 0;
+  background: transparent;
+  border-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.tech-conclusao p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.tech-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #d9e9dc;
+  text-align: center;
+  color: #65806b;
+  font-size: 14px;
+}
+
+.tech-footer p {
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .dicas-tech-blog {
+    padding: 0 10px;
+    margin: 10px auto;
+  }
+  .dicas-tech-card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+  .dicas-tech-blog h1 {
+    font-size: 26px;
+  }
+  .dicas-tech-blog h2 {
+    font-size: 21px;
+  }
+  .dicas-tech-blog h3 {
+    font-size: 18px;
+  }
+  .dicas-tech-blog p,
+  .dicas-tech-blog li {
+    font-size: 16px;
+  }
+  .tech-imagem {
+    margin: 20px auto;
+  }
+  .tech-tipo-card {
+    padding: 15px;
+  }
+  .tech-lista,
+  .tech-impacto,
+  .tech-conclusao {
+    padding: 17px;
+  }
+}
+
+/* Estado visual da alternativa selecionada antes de responder */
+.tech-opcao.selecionada {
+  background: #eef8f0;
+  border-color: #76a982;
+  box-shadow: 0 0 0 2px rgba(79, 128, 96, 0.12);
+}
+.tech-opcao input:checked {
+  accent-color: #4f8060;
+}
+.tech-quiz-btn:disabled {
+  opacity: 0.65;
+  cursor: default;
+}

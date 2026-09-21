@@ -1,4 +1,10 @@
 /* =========================================================
+   DICAS TECH WEBER
+   PADRÃO VISUAL: VERDE CLARO / TECNOLÓGICO
+   ========================================================= */
+
+
+/* =========================================================
    CONTAINER PRINCIPAL
    ========================================================= */
 
@@ -21,6 +27,7 @@
   box-sizing: border-box;
 }
 
+
 /* =========================================================
    TÍTULO PRINCIPAL
    ========================================================= */
@@ -34,6 +41,7 @@
   text-align: center;
   border-bottom: 2px solid #d9eadc;
 }
+
 
 /* =========================================================
    TÍTULOS DAS SEÇÕES
@@ -56,6 +64,7 @@
   font-size: 20px;
 }
 
+
 /* =========================================================
    TEXTOS
    ========================================================= */
@@ -77,6 +86,7 @@
   margin-bottom: 12px;
 }
 
+
 /* =========================================================
    INTRODUÇÃO
    ========================================================= */
@@ -89,37 +99,45 @@
   border-radius: 12px;
 }
 
+
 /* =========================================================
    IMAGEM PRINCIPAL
    ========================================================= */
 
 .tech-imagem {
+  width: 100%;
   margin: 25px auto;
   text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .tech-imagem a {
   display: block;
+  width: 100%;
   padding: 0;
   text-decoration: none;
 }
 
 .tech-imagem img {
   display: block;
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
   height: auto;
   margin: 0 auto;
   border: 0;
   border-radius: 15px;
   box-shadow: 0 5px 18px rgba(76, 125, 88, 0.12);
+  object-fit: contain;
 }
 
 .tech-imagem p {
   margin: 10px 0 0;
   color: #66816d;
   font-size: 14px;
+  line-height: 1.5;
 }
+
 
 /* =========================================================
    CAIXAS DE DESTAQUE
@@ -145,6 +163,7 @@
   margin-bottom: 0;
 }
 
+
 /* =========================================================
    CAIXA DE INFORMAÇÕES
    ========================================================= */
@@ -160,6 +179,7 @@
 .tech-info p {
   margin: 7px 0;
 }
+
 
 /* =========================================================
    SEÇÃO DE TIPOS DE IA
@@ -182,6 +202,7 @@
   margin-top: 0;
 }
 
+
 /* =========================================================
    LISTA DE APLICAÇÕES
    ========================================================= */
@@ -198,6 +219,7 @@
   color: #6d9b78;
 }
 
+
 /* =========================================================
    IMPACTO E FUTURO
    ========================================================= */
@@ -213,8 +235,9 @@
   margin-bottom: 0;
 }
 
+
 /* =========================================================
-   SEÇÃO DO QUIZ (PASSO A PASSO)
+   SEÇÃO DO QUIZ
    ========================================================= */
 
 .tech-quiz-box {
@@ -223,7 +246,13 @@
   background: #f4fbf6;
   border: 1px solid #d0e7d5;
   border-radius: 16px;
+  box-sizing: border-box;
 }
+
+
+/* =========================================================
+   PROGRESSO DO QUIZ
+   ========================================================= */
 
 .tech-quiz-progresso {
   margin-bottom: 16px;
@@ -232,7 +261,13 @@
   color: #4f8060;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
+
+
+/* =========================================================
+   PERGUNTAS
+   ========================================================= */
 
 .tech-quiz-pergunta {
   display: none;
@@ -241,22 +276,45 @@
   border: 1px solid #e1efe4;
   border-radius: 12px;
   animation: fadeIn 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .tech-quiz-pergunta.ativa {
   display: block;
 }
 
+
+/* =========================================================
+   ANIMAÇÃO
+   ========================================================= */
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+
+/* =========================================================
+   TÍTULO DA PERGUNTA
+   ========================================================= */
 
 .tech-quiz-pergunta h4 {
   margin: 0 0 16px 0;
   font-size: 18px;
   color: #3b664a;
 }
+
+
+/* =========================================================
+   OPÇÕES DO QUIZ
+   ========================================================= */
 
 .tech-quiz-opcoes {
   display: flex;
@@ -274,6 +332,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 15px;
+  box-sizing: border-box;
 }
 
 .tech-opcao:hover {
@@ -287,6 +346,21 @@
   accent-color: #4f8060;
 }
 
+.tech-opcao.selecionada {
+  background: #eef8f0;
+  border-color: #76a982;
+  box-shadow: 0 0 0 2px rgba(79, 128, 96, 0.12);
+}
+
+.tech-opcao input:checked {
+  accent-color: #4f8060;
+}
+
+
+/* =========================================================
+   RESPOSTA CORRETA / INCORRETA
+   ========================================================= */
+
 .tech-opcao.correta {
   background: #dff2e3 !important;
   border-color: #4f8060 !important;
@@ -299,6 +373,11 @@
   border-color: #df6969 !important;
   color: #8c2727;
 }
+
+
+/* =========================================================
+   MENSAGEM DE FEEDBACK
+   ========================================================= */
 
 .tech-feedback-msg {
   display: none;
@@ -323,10 +402,16 @@
   border: 1px solid #ffcdd2;
 }
 
+
+/* =========================================================
+   BOTÕES DO QUIZ
+   ========================================================= */
+
 .tech-quiz-acoes {
   margin-top: 16px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tech-quiz-btn {
@@ -338,12 +423,24 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .tech-quiz-btn:hover {
   background: #3e684d;
+  transform: translateY(-1px);
 }
+
+.tech-quiz-btn:disabled {
+  opacity: 0.65;
+  cursor: default;
+  transform: none;
+}
+
+
+/* =========================================================
+   BOTÃO PRÓXIMA PERGUNTA
+   ========================================================= */
 
 .tech-btn-proxima {
   display: none;
@@ -354,6 +451,11 @@
   background: #233127;
 }
 
+
+/* =========================================================
+   RESULTADO FINAL
+   ========================================================= */
+
 .tech-resultado-final {
   display: none;
   padding: 24px;
@@ -363,11 +465,13 @@
   background: #eaf6ed;
   color: #234c2f;
   border: 1px solid #bce1c5;
+  box-sizing: border-box;
 }
 
 .tech-resultado-final button {
   margin-top: 15px;
 }
+
 
 /* =========================================================
    CONCLUSÃO
@@ -379,6 +483,7 @@
   background: linear-gradient(135deg, #eef8f0, #e4f3e7);
   border: 1px solid #cfe4d3;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .tech-conclusao h2 {
@@ -392,6 +497,7 @@
 .tech-conclusao p:last-child {
   margin-bottom: 0;
 }
+
 
 /* =========================================================
    RODAPÉ
@@ -410,55 +516,124 @@
   margin-bottom: 8px;
 }
 
+
 /* =========================================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE — TABLETS E CELULARES
    ========================================================= */
 
 @media (max-width: 600px) {
+
   .dicas-tech-blog {
+    width: 100%;
     padding: 0 10px;
     margin: 10px auto;
   }
+
   .dicas-tech-card {
+    width: 100%;
     padding: 15px;
     border-radius: 12px;
   }
+
   .dicas-tech-blog h1 {
     font-size: 26px;
+    line-height: 1.3;
   }
+
   .dicas-tech-blog h2 {
     font-size: 21px;
+    line-height: 1.35;
   }
+
   .dicas-tech-blog h3 {
     font-size: 18px;
   }
+
   .dicas-tech-blog p,
   .dicas-tech-blog li {
     font-size: 16px;
   }
+
+  .tech-intro {
+    padding: 16px;
+  }
+
   .tech-imagem {
+    width: 100%;
     margin: 20px auto;
   }
+
+  .tech-imagem img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
   .tech-tipo-card {
     padding: 15px;
   }
+
   .tech-lista,
   .tech-impacto,
   .tech-conclusao {
     padding: 17px;
   }
+
+  .tech-quiz-box {
+    padding: 15px;
+  }
+
+  .tech-quiz-pergunta {
+    padding: 15px;
+  }
+
+  .tech-quiz-progresso {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .tech-quiz-acoes {
+    flex-direction: column;
+  }
+
+  .tech-quiz-btn {
+    width: 100%;
+  }
+
+  .tech-opcao {
+    font-size: 15px;
+    padding: 12px;
+  }
 }
 
-/* Estado visual da alternativa selecionada antes de responder */
-.tech-opcao.selecionada {
-  background: #eef8f0;
-  border-color: #76a982;
-  box-shadow: 0 0 0 2px rgba(79, 128, 96, 0.12);
-}
-.tech-opcao input:checked {
-  accent-color: #4f8060;
-}
-.tech-quiz-btn:disabled {
-  opacity: 0.65;
-  cursor: default;
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .dicas-tech-blog {
+    padding: 0 7px;
+  }
+
+  .dicas-tech-card {
+    padding: 12px;
+  }
+
+  .dicas-tech-blog h1 {
+    font-size: 23px;
+  }
+
+  .dicas-tech-blog h2 {
+    font-size: 19px;
+  }
+
+  .tech-quiz-box {
+    padding: 10px;
+  }
+
+  .tech-quiz-pergunta {
+    padding: 12px;
+  }
 }

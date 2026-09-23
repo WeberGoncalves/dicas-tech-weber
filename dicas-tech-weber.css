@@ -1,7 +1,9 @@
+```css
 /* =========================================================
    DICAS TECH WEBER
    CSS PRINCIPAL — TEMA TECNOLÓGICO VERDE CLARO
-   Compatível com Blogger
+   VERSÃO CORRIGIDA PARA BLOGGER
+   CSS MANTIDO NO GITHUB
    ========================================================= */
 
 
@@ -10,10 +12,13 @@
    ========================================================= */
 
 .dicas-tech-blog {
-  width: 100%;
+  width: auto;
   max-width: 100%;
+  min-width: 0;
+
   margin: 20px 0;
   padding: 0;
+
   box-sizing: border-box;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -25,8 +30,11 @@
 }
 
 
-/* Garante que padding e bordas não aumentem a largura */
+/* =========================================================
+   CONTROLE DE BOX MODEL
+   ========================================================= */
 
+.dicas-tech-blog,
 .dicas-tech-blog *,
 .dicas-tech-blog *::before,
 .dicas-tech-blog *::after {
@@ -38,13 +46,16 @@
    CARTÃO PRINCIPAL
    ========================================================= */
 
-.dicas-tech-card {
-  width: 100%;
+.dicas-tech-blog .dicas-tech-card {
+  width: auto;
   max-width: 100%;
+  min-width: 0;
+
   margin: 0;
   padding: 25px;
 
   background: #fbfffc;
+
   border: 1px solid #cfe6d5;
   border-radius: 18px;
 
@@ -58,7 +69,7 @@
    TÍTULO PRINCIPAL
    ========================================================= */
 
-.dicas-tech-card h1 {
+.dicas-tech-blog .dicas-tech-card h1 {
   margin: 0 0 25px;
 
   color: #4f8060;
@@ -77,7 +88,7 @@
    TÍTULOS DAS SEÇÕES
    ========================================================= */
 
-.dicas-tech-card h2 {
+.dicas-tech-blog .dicas-tech-card h2 {
   margin: 35px 0 20px;
   padding: 12px 15px;
 
@@ -93,7 +104,7 @@
 }
 
 
-.dicas-tech-card h3 {
+.dicas-tech-blog .dicas-tech-card h3 {
   color: #527c5e;
 
   font-size: 20px;
@@ -103,7 +114,7 @@
 }
 
 
-.dicas-tech-card h4 {
+.dicas-tech-blog .dicas-tech-card h4 {
   color: #4f8060;
 
   font-size: 18px;
@@ -117,7 +128,7 @@
    PARÁGRAFOS
    ========================================================= */
 
-.dicas-tech-card p {
+.dicas-tech-blog .dicas-tech-card p {
   margin: 0 0 16px;
 }
 
@@ -126,7 +137,7 @@
    INTRODUÇÃO
    ========================================================= */
 
-.tech-intro {
+.dicas-tech-blog .tech-intro {
   margin: 0 0 25px;
   padding: 20px;
 
@@ -139,26 +150,23 @@
 
 /* =========================================================
    IMAGEM PRINCIPAL
-   CORREÇÃO PARA NÃO ESTOURAR A COLUNA DO BLOGGER
    ========================================================= */
 
-.tech-imagem {
+.dicas-tech-blog .tech-imagem {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 
   margin: 25px auto;
-
   padding: 0;
 
   text-align: center;
-
-  box-sizing: border-box;
 
   overflow: hidden;
 }
 
 
-.tech-imagem img {
+.dicas-tech-blog .tech-imagem img {
   display: block;
 
   width: 100%;
@@ -176,7 +184,7 @@
 }
 
 
-.tech-imagem p {
+.dicas-tech-blog .tech-imagem p {
   margin: 10px 0 0;
 
   color: #66816d;
@@ -187,10 +195,10 @@
 
 
 /* =========================================================
-   DESTAQUE / VOCÊ SABIA
+   DESTAQUE
    ========================================================= */
 
-.tech-destaque {
+.dicas-tech-blog .tech-destaque {
   margin: 30px 0;
   padding: 20px;
 
@@ -205,7 +213,7 @@
 }
 
 
-.tech-destaque strong {
+.dicas-tech-blog .tech-destaque strong {
   display: block;
 
   margin-bottom: 8px;
@@ -216,7 +224,7 @@
 }
 
 
-.tech-destaque p {
+.dicas-tech-blog .tech-destaque p {
   margin-bottom: 0;
 }
 
@@ -225,9 +233,10 @@
    LISTA DE TIPOS DE IA
    ========================================================= */
 
-.tech-tipos {
+.dicas-tech-blog .tech-tipos {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 
   display: grid;
 
@@ -240,12 +249,13 @@
 
 
 /* =========================================================
-   CARD DE CADA TIPO DE IA
+   CARD DE CADA TIPO
    ========================================================= */
 
-.tech-tipo-card {
+.dicas-tech-blog .tech-tipo-card {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 
   padding: 20px;
 
@@ -261,7 +271,7 @@
 }
 
 
-.tech-tipo-card h3 {
+.dicas-tech-blog .tech-tipo-card h3 {
   margin-top: 0;
 
   color: #4f8060;
@@ -270,7 +280,7 @@
 }
 
 
-.tech-tipo-card p:last-child {
+.dicas-tech-blog .tech-tipo-card p:last-child {
   margin-bottom: 0;
 }
 
@@ -279,9 +289,10 @@
    LISTA DE APLICAÇÕES
    ========================================================= */
 
-.tech-lista {
+.dicas-tech-blog .tech-lista {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 
   margin: 20px 0;
   padding: 20px 25px;
@@ -294,18 +305,18 @@
 }
 
 
-.tech-lista ul {
+.dicas-tech-blog .tech-lista ul {
   margin: 0;
   padding-left: 22px;
 }
 
 
-.tech-lista li {
+.dicas-tech-blog .tech-lista li {
   margin-bottom: 10px;
 }
 
 
-.tech-lista li:last-child {
+.dicas-tech-blog .tech-lista li:last-child {
   margin-bottom: 0;
 }
 
@@ -314,7 +325,7 @@
    IMPACTO E FUTURO
    ========================================================= */
 
-.tech-impacto {
+.dicas-tech-blog .tech-impacto {
   margin: 25px 0;
   padding: 22px;
 
@@ -326,18 +337,19 @@
 }
 
 
-.tech-impacto p:last-child {
+.dicas-tech-blog .tech-impacto p:last-child {
   margin-bottom: 0;
 }
 
 
 /* =========================================================
-   QUIZ INTERATIVO
+   QUIZ
    ========================================================= */
 
-.tech-quiz-box {
+.dicas-tech-blog .tech-quiz-box {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 
   margin: 30px 0;
   padding: 25px;
@@ -355,11 +367,12 @@
 
 
 /* =========================================================
-   BARRA DE PROGRESSO
+   PROGRESSO
    ========================================================= */
 
-.tech-quiz-progresso {
+.dicas-tech-blog .tech-quiz-progresso {
   width: 100%;
+  min-width: 0;
 
   display: flex;
 
@@ -386,24 +399,25 @@
    PERGUNTAS
    ========================================================= */
 
-.tech-quiz-pergunta {
+.dicas-tech-blog .tech-quiz-pergunta {
   display: none;
 
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 }
 
 
-.tech-quiz-pergunta.ativa {
+.dicas-tech-blog .tech-quiz-pergunta.ativa {
   display: block;
 }
 
 
 /* =========================================================
-   OPÇÕES DO QUIZ
+   OPÇÕES
    ========================================================= */
 
-.tech-quiz-opcoes {
+.dicas-tech-blog .tech-quiz-opcoes {
   width: 100%;
 
   display: flex;
@@ -416,10 +430,11 @@
 }
 
 
-.tech-opcao {
+.dicas-tech-blog .tech-opcao {
   display: block;
 
   width: 100%;
+  max-width: 100%;
 
   padding: 14px 16px;
 
@@ -438,7 +453,7 @@
 }
 
 
-.tech-opcao:hover {
+.dicas-tech-blog .tech-opcao:hover {
   background: #f0f8f2;
 
   border-color: #8fba98;
@@ -447,23 +462,23 @@
 }
 
 
-.tech-opcao input {
+.dicas-tech-blog .tech-opcao input {
   margin-right: 8px;
 }
 
 
 /* =========================================================
-   RESPOSTA CORRETA / INCORRETA
+   RESPOSTAS
    ========================================================= */
 
-.tech-opcao.correta {
+.dicas-tech-blog .tech-opcao.correta {
   background: #e8f6eb;
 
   border-color: #72a77b;
 }
 
 
-.tech-opcao.incorreta {
+.dicas-tech-blog .tech-opcao.incorreta {
   background: #fff0f0;
 
   border-color: #d88989;
@@ -471,10 +486,10 @@
 
 
 /* =========================================================
-   MENSAGEM DE FEEDBACK
+   FEEDBACK
    ========================================================= */
 
-.tech-feedback-msg {
+.dicas-tech-blog .tech-feedback-msg {
   min-height: 25px;
 
   margin: 15px 0;
@@ -485,10 +500,10 @@
 
 
 /* =========================================================
-   BOTÕES DO QUIZ
+   BOTÕES
    ========================================================= */
 
-.tech-quiz-acoes {
+.dicas-tech-blog .tech-quiz-acoes {
   display: flex;
 
   flex-wrap: wrap;
@@ -499,7 +514,7 @@
 }
 
 
-.tech-quiz-btn {
+.dicas-tech-blog .tech-quiz-btn {
   display: inline-block;
 
   padding: 11px 18px;
@@ -526,7 +541,7 @@
 }
 
 
-.tech-quiz-btn:hover {
+.dicas-tech-blog .tech-quiz-btn:hover {
   background: #4f8060;
 
   transform: translateY(-1px);
@@ -535,7 +550,7 @@
 }
 
 
-.tech-quiz-btn:disabled {
+.dicas-tech-blog .tech-quiz-btn:disabled {
   opacity: 0.6;
 
   cursor: not-allowed;
@@ -546,27 +561,22 @@
 }
 
 
-/* =========================================================
-   BOTÃO PRÓXIMA PERGUNTA
-   ========================================================= */
-
-.tech-btn-proxima {
+.dicas-tech-blog .tech-btn-proxima {
   display: none;
 }
 
 
 /* =========================================================
-   RESULTADO FINAL DO QUIZ
+   RESULTADO
    ========================================================= */
 
-.tech-resultado-final {
+.dicas-tech-blog .tech-resultado-final {
   display: none;
 
   width: 100%;
   max-width: 100%;
 
   margin-top: 20px;
-
   padding: 25px;
 
   background: #eaf7ed;
@@ -579,12 +589,12 @@
 }
 
 
-.tech-resultado-final.ativo {
+.dicas-tech-blog .tech-resultado-final.ativo {
   display: block;
 }
 
 
-.resultado-texto {
+.dicas-tech-blog .resultado-texto {
   margin-bottom: 20px;
 
   color: #4f8060;
@@ -598,7 +608,7 @@
    CONCLUSÃO
    ========================================================= */
 
-.tech-conclusao {
+.dicas-tech-blog .tech-conclusao {
   margin: 35px 0 25px;
   padding: 25px;
 
@@ -610,21 +620,21 @@
 }
 
 
-.tech-conclusao h2 {
+.dicas-tech-blog .tech-conclusao h2 {
   margin-top: 0;
 }
 
 
-.tech-conclusao p:last-child {
+.dicas-tech-blog .tech-conclusao p:last-child {
   margin-bottom: 0;
 }
 
 
 /* =========================================================
-   RODAPÉ DO POST
+   RODAPÉ
    ========================================================= */
 
-.tech-footer {
+.dicas-tech-blog .tech-footer {
   margin-top: 30px;
   padding-top: 20px;
 
@@ -638,7 +648,7 @@
 }
 
 
-.tech-footer p {
+.dicas-tech-blog .tech-footer p {
   margin: 6px 0;
 }
 
@@ -662,8 +672,7 @@
 
 
 /* =========================================================
-   IMAGENS INTERNAS
-   EVITA ESTOURAR A COLUNA DO BLOGGER
+   IMAGENS
    ========================================================= */
 
 .dicas-tech-blog img {
@@ -675,7 +684,7 @@
 
 
 /* =========================================================
-   VÍDEOS / IFRAMES
+   IFRAMES
    ========================================================= */
 
 .dicas-tech-blog iframe {
@@ -695,8 +704,6 @@
    ========================================================= */
 
 .dicas-tech-blog table {
-  display: block;
-
   width: 100%;
   max-width: 100%;
 
@@ -746,27 +753,7 @@
 
 
 /* =========================================================
-   EVITA ELEMENTOS INTERNOS ULTRAPASSAREM A COLUNA
-   ========================================================= */
-
-.dicas-tech-blog > *,
-.dicas-tech-card > * {
-  max-width: 100%;
-}
-
-
-/* =========================================================
-   CORREÇÃO ESPECÍFICA PARA ELEMENTOS COM LARGURA FIXA
-   ========================================================= */
-
-.dicas-tech-blog [style*="width"],
-.dicas-tech-card [style*="width"] {
-  max-width: 100%;
-}
-
-
-/* =========================================================
-   ACESSIBILIDADE — FOCO PELO TECLADO
+   ACESSIBILIDADE
    ========================================================= */
 
 .dicas-tech-blog a:focus,
@@ -786,17 +773,16 @@
 @media screen and (max-width: 768px) {
 
   .dicas-tech-blog {
-    width: 100%;
+    width: auto;
     max-width: 100%;
 
     margin: 15px 0;
-
     padding: 0;
   }
 
 
-  .dicas-tech-card {
-    width: 100%;
+  .dicas-tech-blog .dicas-tech-card {
+    width: auto;
     max-width: 100%;
 
     padding: 20px;
@@ -805,34 +791,33 @@
   }
 
 
-  .dicas-tech-card h1 {
+  .dicas-tech-blog .dicas-tech-card h1 {
     font-size: 28px;
   }
 
 
-  .dicas-tech-card h2 {
+  .dicas-tech-blog .dicas-tech-card h2 {
     font-size: 22px;
   }
 
 
-  .tech-tipos {
+  .dicas-tech-blog .tech-tipos {
     grid-template-columns: 1fr;
 
     gap: 15px;
   }
 
 
-  .tech-quiz-box {
+  .dicas-tech-blog .tech-quiz-box {
     padding: 20px;
   }
 
 
-  .tech-quiz-progresso {
+  .dicas-tech-blog .tech-quiz-progresso {
     flex-direction: column;
 
     align-items: flex-start;
   }
-
 }
 
 
@@ -843,17 +828,16 @@
 @media screen and (max-width: 480px) {
 
   .dicas-tech-blog {
-    width: 100%;
+    width: auto;
     max-width: 100%;
 
     margin: 10px 0;
-
     padding: 0;
   }
 
 
-  .dicas-tech-card {
-    width: 100%;
+  .dicas-tech-blog .dicas-tech-card {
+    width: auto;
     max-width: 100%;
 
     padding: 15px;
@@ -862,41 +846,41 @@
   }
 
 
-  .dicas-tech-card h1 {
+  .dicas-tech-blog .dicas-tech-card h1 {
     font-size: 24px;
 
     line-height: 1.35;
   }
 
 
-  .dicas-tech-card h2 {
+  .dicas-tech-blog .dicas-tech-card h2 {
     padding: 10px 12px;
 
     font-size: 20px;
   }
 
 
-  .dicas-tech-card h3 {
+  .dicas-tech-blog .dicas-tech-card h3 {
     font-size: 18px;
   }
 
 
-  .tech-intro,
-  .tech-destaque,
-  .tech-impacto,
-  .tech-conclusao {
+  .dicas-tech-blog .tech-intro,
+  .dicas-tech-blog .tech-destaque,
+  .dicas-tech-blog .tech-impacto,
+  .dicas-tech-blog .tech-conclusao {
     padding: 16px;
   }
 
 
-  .tech-imagem {
+  .dicas-tech-blog .tech-imagem {
     width: 100%;
 
     margin: 20px auto;
   }
 
 
-  .tech-imagem img {
+  .dicas-tech-blog .tech-imagem img {
     width: 100%;
     max-width: 100%;
 
@@ -904,42 +888,42 @@
   }
 
 
-  .tech-lista {
+  .dicas-tech-blog .tech-lista {
     padding: 15px 18px;
   }
 
 
-  .tech-quiz-box {
+  .dicas-tech-blog .tech-quiz-box {
     padding: 15px;
 
     border-radius: 12px;
   }
 
 
-  .tech-opcao {
+  .dicas-tech-blog .tech-opcao {
     padding: 12px;
   }
 
 
-  .tech-quiz-acoes {
+  .dicas-tech-blog .tech-quiz-acoes {
     flex-direction: column;
   }
 
 
-  .tech-quiz-btn {
+  .dicas-tech-blog .tech-quiz-btn {
     width: 100%;
 
     text-align: center;
   }
 
 
-  .tech-footer {
+  .dicas-tech-blog .tech-footer {
     font-size: 13px;
   }
-
 }
 
 
 /* =========================================================
    FIM DO CSS — DICAS TECH WEBER
    ========================================================= */
+```
